@@ -19,7 +19,7 @@
  * npm require suncalc to switch on display on dusk or sunset
  */
 
-const debug = require('debug')('raymarine-autopilot')
+const debug = require('debug')('raymarine-seatalk1-autopilot')
 
 const Bacon = require('baconjs');
 
@@ -94,7 +94,7 @@ module.exports = function(app) {
   plugin.description = "Plugin that controls a Raymarine Seatalk 1 autopilot"
 
   plugin.schema = {
-    title: "Raymarine Autopilot Control",
+    title: "Raymarine Seatalk1 Autopilot Control",
     type: "object",
     properties: {
       }
