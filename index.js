@@ -90,7 +90,7 @@ module.exports = function(app) {
   }
 
   plugin.id = "raymarineautopilot"
-  plugin.name = "Raymarine Autopilot"
+  plugin.name = "Raymarine Seatalk1 Autopilot"
   plugin.description = "Plugin that controls a Raymarine Seatalk 1 autopilot"
 
   plugin.schema = {
