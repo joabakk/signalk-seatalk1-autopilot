@@ -13,16 +13,16 @@
   "license": "ISC",
   "dependencies": {
     "baconjs": "^0.7.88",
-    "debug": "^2.2.0",
-    "lodash": "^3.10.1",
+    "debug": "^3.0.1",
+    "lodash": "^4.17.4",
     "nmea0183-utilities": "^0.3.2",
     "react": "^15.4.2",
-	  "react-jsonschema-form": "^0.41.2"
+	  "react-jsonschema-form": "^0.50.1"
   },
 	"devDependencies": {
 		"chai": "^4.0.0",
 		"chai-things": "^0.2.0",
-		"debug": "^2.2.0",
+		"debug": "^3.0.1",
 		"mocha": "^3.3.0",
 		"signalk-schema": "0.0.1-3"
 	},
