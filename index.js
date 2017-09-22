@@ -33,7 +33,7 @@ const _ = require('lodash')
 const state_commands = {
     "auto":    "86,11,01,FE", //tested ok on ST2000+
     "wind":    "86,21,23,DC", //tested ok on ST2000+
-    "route":   "86,11,03,FC",
+    "route":   "86,11,03,FC", //tested ok on ST2000+
     "standby": "86,11,02,FD" //tested ok on ST2000+
   }
 const heading_command = "84,06,%s0,%s,02,00,00,00,00"
