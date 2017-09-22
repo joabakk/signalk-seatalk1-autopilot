@@ -3,7 +3,7 @@
  * Borrowed shamelessly from https://github.com/sbender9/signalk-raymarine-autopilot,
  * https://github.com/SignalK/signalk-to-nmea0183 and
  * http://www.vermontficks.org/remkc.htm among others
- * 'sudo DEBUG=raymarine-autopilot ./bin/Kristina' to debug
+ * 'sudo DEBUG=raymarine-seatalk1-autopilot ./bin/Kristina' to debug
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
