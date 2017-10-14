@@ -17,7 +17,7 @@
     "lodash": "^4.17.4",
     "nmea0183-utilities": "^0.3.2",
     "react": "^15.4.2",
-	  "react-jsonschema-form": "^0.50.1"
+	  "react-jsonschema-form": "^0.51.0"
   },
 	"devDependencies": {
 		"chai": "^4.0.0",
