@@ -25,7 +25,7 @@ const Bacon = require('baconjs');
 
 const util = require('util')
 
-const utilSK = require('nmea0183-utilities')
+const utilSK = require('@signalk/nmea0183-utilities')
 
 const _ = require('lodash')
 
