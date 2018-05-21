@@ -114,7 +114,7 @@ function changeHeading(app, command_json)
 {
   var ammount = command_json["value"]
 
-  var state = _.get(app.signalk.self, state_path)
+  var state = app.getSelfPath(state_path)
   var new_value
   var command_format
   var nmea0183_msgs
@@ -129,7 +129,7 @@ function changeHeading(app, command_json)
   }
   else if ( state == "wind" )
   {
-    var current = _.get(app.signalk.self, target_wind_path_value)
+    var current = app.getSelfPath(target_wind_path_value)
     var context = app.selfId
     debug("current wind angle: " + radsToDeg(current))
     new_value = radsToDeg(current)
@@ -177,7 +177,7 @@ function changeHeading(app, command_json)
   */
   /*
   target wind path structure "10,01,%s,%s" where 10  01  XX  YY  Apparent Wind Angle: XXYY/2 degrees right of bow
-  
+
 
   }*/
   return nmea0183_msgs
@@ -187,7 +187,7 @@ function setState(app, command_json)
 {
   var state = command_json["value"]
   if (state == "wind"){
-    current = _.get(app.signalk.self, current_wind_path)
+    current = app.getSelfPath(current_wind_path)
       const data = {
       context: "vessels." + app.selfId,
       updates: [
