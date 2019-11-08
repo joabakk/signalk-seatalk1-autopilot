@@ -42,6 +42,8 @@ const heading_plusOne = "86,11,07,F8" //tested ok on ST2000+
 const heading_lessOne = "86,11,05,FA" //tested ok on ST2000+
 const heading_plusTen = "86,11,08,F7" //tested ok on ST2000+
 const heading_lessTen = "86,11,06,F9" //tested ok on ST2000+
+const heading_tack_stbd = "86,11,22,DD"
+const heading_tack_port = "86,11,22,DE"
 
 //const wind_direction_command = "10,01,%s,%s"
 
@@ -108,6 +110,23 @@ function padd(n, p, c)
   var pad_char = typeof c !== 'undefined' ? c : '0';
   var pad = new Array(1 + p).join(pad_char);
   return (pad + n).slice(-pad.length);
+}
+function tackTo(app, command_json)
+{
+  var tackTo = command_json["value"]
+  app.debug("tackTo: " + tackTo)
+  if (tackTo === "port")
+  {
+    return heading_tack_port
+  }
+  else if (tackTo === "starboard")
+  {
+    return heading_tack_stbd
+  }
+  else
+  {
+    app.debug("tackTo: unknown " + tackTo)
+  }
 }
 
 function changeHeading(app, command_json)
@@ -269,6 +288,10 @@ function sendCommand(app, command_json)
   {
     nmea0183_msgs = advanceWaypoint(app, command_json)
   }*/
+  else if ( action == "tackTo" )
+  {
+      nmea0183_msgs = tackTo(app, command_json)
+  }
   if ( nmea0183_msgs )
   {
     debug("nmea0183_msg: " + nmea0183_msgs)
