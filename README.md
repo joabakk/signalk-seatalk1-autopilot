@@ -1,6 +1,6 @@
 # signalk-seatalk1-autopilot
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/joabakk/signalk-seatalk1-autopilot.svg)](https://greenkeeper.io/)
+
 
 Enables Signal K control of Raymarine Seatalk 1 autopilots. Tested with WilhelmSK iOS app and with ST2000+ autopilot. 
 
