@@ -7,7 +7,6 @@
     "test": "mocha"
   },
   "keywords": [
-    "signalk-node-server-plugin"
   ],
   "author": "Joachim Bakke",
   "license": "ISC",
